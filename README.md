@@ -1,4 +1,4 @@
-# Mixture of Experts Meets Prompt-Based Continual Learning
+# Mixture of Experts Meets Prompt-Based Continual Learning (NeurIPS 2024)
 
 This repository is the official implementation of `Mixture of Experts Meets Prompt-Based Continual Learning` (NeurIPS 2024).
 
