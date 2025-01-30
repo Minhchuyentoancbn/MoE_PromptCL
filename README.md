@@ -71,3 +71,18 @@ If you encounter any issues or have any questions, please let us know.
 
 ## Acknowledgement
 This repository is developed mainly based on the PyTorch implementation of [HiDe-Prompt](https://github.com/thu-ml/HiDe-Prompt). Many thanks to its contributors!
+
+
+## **Citation**
+
+If you find this code helpful to your work, please cite our paper:
+
+```bibtex
+@article{le2024mixture,
+    title={Mixture of Experts Meets Prompt-Based Continual Learning},
+    author={Le, Minh and Nguyen, An and Nguyen, Huy and Nguyen, Trang and Pham, Trang and Van Ngo, Linh and Ho, Nhat},
+    journal={Advances in Neural Information Processing Systems},
+    volume={38},
+    year={2024},
+}
+```
