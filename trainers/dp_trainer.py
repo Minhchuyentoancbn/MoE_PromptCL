@@ -75,15 +75,15 @@ def train(args):
             else:
                 print('No checkpoint found at:', checkpoint_path)
                 return
-            original_checkpoint_path = os.path.join(args.trained_original_model,
-                                                    'checkpoint/task{}_checkpoint.pth'.format(task_id + 1))
-            if os.path.exists(original_checkpoint_path):
-                print('Loading checkpoint from:', original_checkpoint_path)
-                original_checkpoint = torch.load(original_checkpoint_path, map_location=device)
-                original_model.load_state_dict(original_checkpoint['model'])
-            else:
-                print('No checkpoint found at:', original_checkpoint_path)
-                return
+            # original_checkpoint_path = os.path.join(args.trained_original_model,
+            #                                         'checkpoint/task{}_checkpoint.pth'.format(task_id + 1))
+            # if os.path.exists(original_checkpoint_path):
+            #     print('Loading checkpoint from:', original_checkpoint_path)
+            #     original_checkpoint = torch.load(original_checkpoint_path, map_location=device)
+            #     original_model.load_state_dict(original_checkpoint['model'])
+            # else:
+            #     print('No checkpoint found at:', original_checkpoint_path)
+            #     return
             _ = evaluate_till_now(model, original_model, data_loader, device,
                                   task_id, class_mask, target_task_map, acc_matrix, args, )
 
